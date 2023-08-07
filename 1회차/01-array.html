@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 다루기</title>
+</head>
+<body>
+  
+  <div id="container"></div>
+  
+  <script>
+    // 배열 만들고 확인
+    const vos = ["박지헌", "최현준", "김경록"]
+    console.log(vos)
+    // console.log(vos[0])
+    // console.log(vos[1])
+    // console.log(vos[2])
+
+    // 배열 요소 수정하고 확인
+    vos[0] = "지헌"
+    vos[1] = "현준"
+    vos[2] = "경록"
+    console.log(vos)
+
+    vos.push("윤호")
+    console.log(vos)
+    vos.pop()
+    console.log(vos)
+    console.log(vos.indexOf("경록"))
+    console.log(vos.indexOf("윤호"))
+
+    vos.splice(0, 1, "박지헌")
+    vos.splice(1, 1, "최현준")
+    vos.splice(2, 1, "김경록")
+    console.log(vos)
+
+    vos.forEach(function(member){
+      console.log("VOS의 " + member)
+    })
+
+    const crops = ["토마토", "고추", "가지", "고구마", "들깨"]
+    
+    crops.forEach(function(crop){
+      const p = document.createElement("p")
+      p.textContent = `맛 좋은 ${crop}`
+      document.getElementById("container").append(p)
+    })
+
+    let  result = crops.map(function(crop){
+      const h2 = document.createElement("h2")
+      h2.textContent = `맛 좋은 ${crop}`
+      document.getElementById("container").append(h2)
+      return h2
+    })
+    console.log(result)
+
+    result = crops.filter(function(crop){
+      return crop.length === 3
+    })
+    console.log(result)
+  </script>
+</body>
+</html>

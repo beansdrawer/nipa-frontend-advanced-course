@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'SDKukdetopokki-Lt';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'SDKukdetopokki-Lt';
+  color: #ffffff;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.heading{
+  font-size: 54px;
+  text-align: center;
+  margin: 0 0 50px;
+}

@@ -1,0 +1,18 @@
+.heading{
+  font-size: 64px;
+}
+.heading, .div{
+  text-align: center;
+}
+.btn{
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+
+  color: #ffffff;
+  background-color: #db6464;
+  font-size: 32px;
+
+  border: none;
+  border-radius: 10px;
+}
